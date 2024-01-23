@@ -1,0 +1,79 @@
+.add {
+    position: relative;
+    margin: 0 auto;
+
+    height: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stage0 {
+    width: 60px;
+    box-shadow: #097d91 0px 1px 1px, #097d91 0px 0px 0px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.stage0::after {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.stage1 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 100%
+}
+
+.parent {
+    cursor: pointer;
+    user-select: none;
+}
+
+.parent, .title {
+    box-shadow: #097d91 0px 1px 1px, #097d91 0px 0px 0px 1px;
+    height: 100%;
+    width: 220px;
+
+    font-size: 12px;
+    padding: 5px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title input {
+    outline: none;
+    border: none;
+    font-size: 12px;
+    font-family: inherit;
+    width: 80%;
+    padding: 3px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.buttons > * {
+    cursor: pointer;
+}

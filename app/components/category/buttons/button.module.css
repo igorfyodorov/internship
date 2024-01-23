@@ -1,0 +1,24 @@
+.buttons {
+    position: relative;
+    height: min-content;
+    
+    flex-direction: row;
+    display: flex;
+    gap: 5px;
+}
+
+.buttons input {
+    font-family: inherit;
+    font-size: 12px;
+    width: 200px;
+    height: 20px;
+    outline: none;
+    padding: 0 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.buttons div {
+    cursor: pointer;
+    height: 20px;
+}

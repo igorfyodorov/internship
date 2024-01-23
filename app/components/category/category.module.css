@@ -1,0 +1,18 @@
+.category {
+    width: 100%;
+    box-shadow: #097d91 0px 1px 1px, #097d91 0px 0px 0px 1px;
+    font-size: 12px;
+    height: 35px;
+    padding: 0 10px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category p {
+    user-select: none;
+    cursor: pointer;
+}

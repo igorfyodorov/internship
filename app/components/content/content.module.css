@@ -1,0 +1,43 @@
+.wrapper {
+    width: 800px;
+    max-width: 95vw;
+
+    margin: 20px auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navigation {
+    width: min-content;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation > div {
+    width: 110px;
+    height: 40px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 13px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activeTab {
+    box-shadow: #097d91 0px 1px 1px, #097d91 0px 0px 0px 1px;
+    color: #097d91;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    width: 100%;    
+}
